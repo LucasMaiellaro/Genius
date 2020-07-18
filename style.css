@@ -32,6 +32,11 @@ body{
     justify-content: center;
 }
 
+.div-main-2{
+    display: flex;
+    margin-left: 483px;
+}
+
 /* ======== BOTOES ======== */
 
 .verde{
@@ -94,6 +99,23 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 70px;
     text-transform: uppercase;
+}
+
+/* ======== CONTADOR ========  */
+
+.contador{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    margin-left: 160px;
+    text-transform: uppercase;
+}
+
+.numero-cont{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    margin-left: 228px;
+    margin-top: 10px;
 }
 
 /* ======== HOVER ======== */

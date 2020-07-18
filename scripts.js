@@ -7,10 +7,12 @@ azul = document.getElementById('azul');
 i = 0;
 sequencia = [];
 sequenciaJogador = [];
+contador = 0;
 
 // ==================== MAIN CODE
 
 document.querySelector('.perdeu').style.display = 'none';
+document.querySelector('.numero-cont').innerHTML = contador;
 
 function fazSequencia(){
     document.querySelector('.div-main').style.display = 'none';
@@ -23,6 +25,8 @@ function fazSequencia(){
         sequenciaJogador = [];
         iJogador = 0;
     }, 1000);
+    contador++;
+    document.querySelector('.numero-cont').innerHTML = contador;
 }
 
 //FUNCTION TA FUNCIONANDO 
@@ -59,7 +63,7 @@ function reproduzSequencia(sequencia){
 
 function apertaVerde(){
     verde.style.backgroundColor = 'rgb(81, 255, 0)';
-    setTimeout(function apagaBotao(){verde.style.backgroundColor = 'green'}, 0300);
+    setTimeout(function apagaBotao(){verde.style.backgroundColor = 'green'}, 0400);
     sequenciaJogador[iJogador] = 0;
     if (sequenciaJogador[iJogador] != sequencia[iJogador]){
         perdeu();
@@ -77,7 +81,7 @@ function apertaVerde(){
 
 function apertaVermelho(){
     vermelho.style.backgroundColor = 'rgb(255, 0, 76)';
-    setTimeout(function apagaBotao(){vermelho.style.backgroundColor = 'red'}, 0300);
+    setTimeout(function apagaBotao(){vermelho.style.backgroundColor = 'red'}, 0400);
     sequenciaJogador[iJogador] = 1;
     if (sequenciaJogador[iJogador] != sequencia[iJogador]){
         perdeu();
@@ -95,7 +99,7 @@ function apertaVermelho(){
 
 function apertaAmarelo(){
     amarelo.style.backgroundColor = 'rgb(255, 255, 144)';
-    setTimeout(function apagaBotao(){amarelo.style.backgroundColor = 'yellow'}, 0300);
+    setTimeout(function apagaBotao(){amarelo.style.backgroundColor = 'yellow'}, 0400);
     sequenciaJogador[iJogador] = 2;
     if (sequenciaJogador[iJogador] != sequencia[iJogador]){
         perdeu();
@@ -113,7 +117,7 @@ function apertaAmarelo(){
 
 function apertaAzul(){
     azul.style.backgroundColor = 'rgb(75, 159, 255)';
-    setTimeout(function apagaBotao(){azul.style.backgroundColor = 'blue'}, 0300);
+    setTimeout(function apagaBotao(){azul.style.backgroundColor = 'blue'}, 0400);
     sequenciaJogador[iJogador] = 3;
     if (sequenciaJogador[iJogador] != sequencia[iJogador]){
         perdeu();
