@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+}
+
+/* ======== HEADER ======== */
+
+.titulo{
+    display: flex;
+    font-family: 'Merienda One', cursive;
+    justify-content: center;
+}
+
+/* ======== MAIN ======== */
+
+.botao{
+    background-color: rgb(83, 83, 83);
+    border: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    height: 50px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    outline: none;
+    text-transform: uppercase;
+    width: 150px;
+}
+
+/* ======== DIV MAIN ======== */
+
+.div-main{
+    display: flex;
+    justify-content: center;
+}
+
+/* ======== BOTOES ======== */
+
+.verde{
+    background-color: green;
+    border: 9px solid black;
+    border-top-left-radius: 100%;
+    color: green;
+    height: 200px;
+    opacity: 0.7;
+    outline: none;
+    position: relative;
+    width: 200px;
+}
+
+.vermelho{
+    background-color: red;
+    border: 9px solid black;
+    border-top-right-radius: 100%;
+    color: red;
+    height: 200px;
+    opacity: 0.7;
+    outline: none;
+    position: relative;
+    width: 200px;   
+}
+
+.amarelo{
+    background-color: yellow;
+    border: 9px solid black;
+    border-bottom-left-radius: 100%;
+    color: yellow;
+    height: 200px;
+    opacity: 0.7;
+    outline: none;
+    position: relative;
+    width: 200px;
+}
+
+.azul{
+    background-color: blue;
+    border: 9px solid black;
+    border-bottom-right-radius: 100%;
+    color: blue;
+    height: 200px;
+    opacity: 0.7;
+    outline: none;
+    position: relative;
+    width: 200px;
+}
+
+/* ======== VOCE PERDEU ======== */
+
+.div-perdeu{
+    display: flex;
+    justify-content: center;
+}
+
+.perdeu{
+    color: red;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+}
+
+/* ======== HOVER ======== */
+
+.verde:hover{
+    opacity: 0.9;
+}
+
+.vermelho:hover{
+    opacity: 0.9;
+}
+
+.amarelo:hover{
+    opacity: 0.9;
+}
+
+.azul:hover{
+    opacity: 0.9;
+}
+
+.botao:hover{
+    background-color: black;
+}

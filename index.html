@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&family=Montserrat&display=swap" rel="stylesheet">
+    <title>Genius</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Genius</h1>
+    </header>
+    
+    <main>
+        <div class="div-main">
+            <button onclick="fazSequencia()" class="botao">começar</button>
+        </div> 
+        <div class="div-main">
+            <button onclick="apertaVerde()" id="verde" class="verde"></button>
+            <button onclick="apertaVermelho()" id="vermelho" class="vermelho"></button>
+        </div>
+        <div class="div-main">
+            <button onclick="apertaAmarelo()" id="amarelo" class="amarelo"></button>
+            <button onclick="apertaAzul()" id="azul" class="azul"></button>
+        </div>
+        <div class="div-perdeu">
+            <h2 class="perdeu">você perdeu</h2>
+        </div>
+    </main>
+</body>
+</html>
