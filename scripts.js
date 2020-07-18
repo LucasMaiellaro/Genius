@@ -12,6 +12,8 @@ contador = 0;
 // ==================== MAIN CODE
 
 document.querySelector('.perdeu').style.display = 'none';
+document.querySelector('.pontuacao').style.display = 'none';
+document.querySelector('.numero-pont').style.display = 'none';
 document.querySelector('.numero-cont').innerHTML = contador;
 
 function fazSequencia(){
@@ -140,7 +142,12 @@ function perdeu(){
     document.querySelector('.vermelho').style.display = 'none';
     document.querySelector('.amarelo').style.display = 'none';
     document.querySelector('.azul').style.display = 'none';
+    document.querySelector('.contador').style.display = 'none';
+    document.querySelector('.numero-cont').style.display = 'none';
     setTimeout(function vocePerdeu(){
-        document.querySelector('.perdeu').style.display = 'initial'
+        document.querySelector('.perdeu').style.display = 'initial';
+        document.querySelector('.pontuacao').style.display = 'initial';
+        document.querySelector('.numero-pont').style.display = 'initial';
+        document.querySelector('.numero-pont').innerHTML = contador;
     }, 0500)
 }

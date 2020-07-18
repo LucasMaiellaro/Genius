@@ -101,6 +101,19 @@ body{
     text-transform: uppercase;
 }
 
+.pontuacao{
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+}
+
+.numero-pont{
+    color: green;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    margin: 0;
+}
+
 /* ======== CONTADOR ========  */
 
 .contador{
