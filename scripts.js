@@ -148,6 +148,6 @@ function perdeu(){
         document.querySelector('.perdeu').style.display = 'initial';
         document.querySelector('.pontuacao').style.display = 'initial';
         document.querySelector('.numero-pont').style.display = 'initial';
-        document.querySelector('.numero-pont').innerHTML = contador;
+        document.querySelector('.numero-pont').innerHTML = contador - 1;
     }, 0500)
 }

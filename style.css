@@ -118,8 +118,9 @@ body{
 
 .contador{
     font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
     margin: 0;
-    margin-left: 160px;
+    margin-left: 195px;
     text-transform: uppercase;
 }
 
