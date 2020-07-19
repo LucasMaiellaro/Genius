@@ -14,10 +14,14 @@ contador = 0;
 document.querySelector('.perdeu').style.display = 'none';
 document.querySelector('.pontuacao').style.display = 'none';
 document.querySelector('.numero-pont').style.display = 'none';
+document.querySelector('.contador').style.display = 'none';
+document.querySelector('.numero-cont').style.display = 'none';
 document.querySelector('.numero-cont').innerHTML = contador;
 
 function fazSequencia(){
     document.querySelector('.div-main').style.display = 'none';
+    document.querySelector('.contador').style.display = 'initial';
+document.querySelector('.numero-cont').style.display = 'initial';
     document.querySelector('main:nth-child(2)').style.marginTop = '110px';
     setTimeout(function (){
         var botao = Math.floor(Math.random() * 4);
