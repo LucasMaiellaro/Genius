@@ -45,7 +45,7 @@ body{
     border-top-left-radius: 100%;
     color: green;
     height: 200px;
-    opacity: 0.7;
+    opacity: 0.8;
     outline: none;
     position: relative;
     width: 200px;
@@ -57,7 +57,7 @@ body{
     border-top-right-radius: 100%;
     color: red;
     height: 200px;
-    opacity: 0.7;
+    opacity: 0.8;
     outline: none;
     position: relative;
     width: 200px;   
@@ -69,7 +69,7 @@ body{
     border-bottom-left-radius: 100%;
     color: yellow;
     height: 200px;
-    opacity: 0.7;
+    opacity: 0.8;
     outline: none;
     position: relative;
     width: 200px;
@@ -81,7 +81,7 @@ body{
     border-bottom-right-radius: 100%;
     color: blue;
     height: 200px;
-    opacity: 0.7;
+    opacity: 0.8;
     outline: none;
     position: relative;
     width: 200px;
@@ -135,19 +135,19 @@ body{
 /* ======== HOVER ======== */
 
 .verde:hover{
-    opacity: 0.9;
+    opacity: 1.0;
 }
 
 .vermelho:hover{
-    opacity: 0.9;
+    opacity: 1.0;
 }
 
 .amarelo:hover{
-    opacity: 0.9;
+    opacity: 1.0;
 }
 
 .azul:hover{
-    opacity: 0.9;
+    opacity: 1.0;
 }
 
 .botao:hover{
