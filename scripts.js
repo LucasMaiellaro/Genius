@@ -19,10 +19,9 @@ document.querySelector('.numero-cont').style.display = 'none';
 document.querySelector('.numero-cont').innerHTML = contador;
 
 function fazSequencia(){
-    document.querySelector('.div-main').style.display = 'none';
+    document.querySelector('.botao').style.display = 'none';
     document.querySelector('.contador').style.display = 'initial';
-document.querySelector('.numero-cont').style.display = 'initial';
-    document.querySelector('main:nth-child(2)').style.marginTop = '110px';
+    document.querySelector('.numero-cont').style.display = 'initial';
     setTimeout(function (){
         var botao = Math.floor(Math.random() * 4);
         sequencia[i] = botao;

@@ -16,23 +16,25 @@
     <main>
         <div class="div-main">
             <button onclick="fazSequencia()" class="botao">começar</button>
-        </div>
-        <div class="div-main-2">
-            <div>
-                <div class="div-main">
-                    <button onclick="apertaVerde()" id="verde" class="verde"></button>
-                    <button onclick="apertaVermelho()" id="vermelho" class="vermelho"></button>
-                </div>
-                <div class="div-main">
-                    <button onclick="apertaAmarelo()" id="amarelo" class="amarelo"></button>
-                    <button onclick="apertaAzul()" id="azul" class="azul"></button>
-                </div>
-            </div>
+            <!-- DIV DO CONTADOR -->
             <div>
                 <div class="div-main">
                     <h2 class="contador">fase:</h2>
                 </div>
-                <h3 class="numero-cont">0</h3>
+                <div class="div-main">
+                    <h3 class="numero-cont">0</h3>
+                </div>
+            </div>
+        </div>
+        <!-- DIV DO TABULEIRO -->
+        <div>
+            <div class="div-main">
+                <button onclick="apertaVerde()" id="verde" class="verde"></button>
+                <button onclick="apertaVermelho()" id="vermelho" class="vermelho"></button>
+            </div>
+            <div class="div-main">
+                <button onclick="apertaAmarelo()" id="amarelo" class="amarelo"></button>
+                <button onclick="apertaAzul()" id="azul" class="azul"></button>
             </div>
         </div>
 
