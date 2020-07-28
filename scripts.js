@@ -32,6 +32,7 @@ function fazSequencia(){
     }, 1000);
     contador++;
     document.querySelector('.numero-cont').innerHTML = contador;
+    console.log(sequencia)
 }
 
 //FUNCTION TA FUNCIONANDO 
@@ -81,7 +82,6 @@ function apertaVerde(){
             iJogador++;
         }
     }
-    console.log(sequenciaJogador);
 }
 
 function apertaVermelho(){
@@ -99,7 +99,6 @@ function apertaVermelho(){
             iJogador++;
         }
     }
-    console.log(sequenciaJogador);
 }
 
 function apertaAmarelo(){
@@ -117,7 +116,6 @@ function apertaAmarelo(){
             iJogador++;
         }
     }
-    console.log(sequenciaJogador);
 }
 
 function apertaAzul(){
@@ -135,7 +133,6 @@ function apertaAzul(){
             iJogador++;
         }   
     }
-    console.log(sequenciaJogador);
 }
 
 // ================================= FUNCTION PERDEU
@@ -154,3 +151,9 @@ function perdeu(){
         document.querySelector('.numero-pont').innerHTML = contador - 1;
     }, 0500)
 }
+
+// ================================= EASTER EGG
+
+console.log('Olá curioso :)');
+console.log('Aqui você consegue roubar e alcançar pontuações incríveis');
+console.log('Quase toda a sequencia será mostrada aqui embaixo');
