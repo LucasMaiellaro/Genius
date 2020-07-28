@@ -22,17 +22,17 @@ function fazSequencia(){
     document.querySelector('.botao').style.display = 'none';
     document.querySelector('.contador').style.display = 'initial';
     document.querySelector('.numero-cont').style.display = 'initial';
+    var botao = Math.floor(Math.random() * 4);
+    sequencia[i] = botao;
     setTimeout(function (){
-        var botao = Math.floor(Math.random() * 4);
-        sequencia[i] = botao;
         reproduzSequencia(sequencia);
-        i++;
-        sequenciaJogador = [];
-        iJogador = 0;
     }, 1000);
+    i++;
+    sequenciaJogador = [];
+    iJogador = 0;
     contador++;
     document.querySelector('.numero-cont').innerHTML = contador;
-    console.log(sequencia)
+    console.log(sequencia);
 }
 
 //FUNCTION TA FUNCIONANDO 
