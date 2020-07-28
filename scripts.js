@@ -8,9 +8,11 @@ i = 0;
 sequencia = [];
 sequenciaJogador = [];
 contador = 0;
+auxiliarContador = -1000;
 
 // ==================== MAIN CODE
 
+document.querySelector('.instrucao').style.display = 'none';
 document.querySelector('.perdeu').style.display = 'none';
 document.querySelector('.pontuacao').style.display = 'none';
 document.querySelector('.numero-pont').style.display = 'none';
@@ -22,6 +24,9 @@ function fazSequencia(){
     document.querySelector('.botao').style.display = 'none';
     document.querySelector('.contador').style.display = 'initial';
     document.querySelector('.numero-cont').style.display = 'initial';
+    document.querySelector('.instrucao').style.display = 'initial';
+    document.querySelector('.instrucao').innerHTML = 'aguarde';
+    document.querySelector('.instrucao').style.color = 'red';
     var botao = Math.floor(Math.random() * 4);
     sequencia[i] = botao;
     setTimeout(function (){
@@ -32,6 +37,11 @@ function fazSequencia(){
     iJogador = 0;
     contador++;
     document.querySelector('.numero-cont').innerHTML = contador;
+    auxiliarContador = auxiliarContador + 1500;
+    setTimeout(function(){
+        document.querySelector('.instrucao').innerHTML = 'reproduza';
+        document.querySelector('.instrucao').style.color = 'green';
+    }, 2000 + auxiliarContador);
     console.log(sequencia);
 }
 
@@ -60,8 +70,8 @@ function reproduzSequencia(sequencia){
                         setTimeout(function apagaBotao(){azul.style.backgroundColor = 'blue'}, 1000);
                         break;
                 }
-            }, 1500 * i)
-        })
+            }, 1500 * i);
+        });
     }
 }
 
@@ -138,6 +148,7 @@ function apertaAzul(){
 // ================================= FUNCTION PERDEU
 
 function perdeu(){
+    document.querySelector('.instrucao').style.display = 'none';
     document.querySelector('.verde').style.display = 'none';
     document.querySelector('.vermelho').style.display = 'none';
     document.querySelector('.amarelo').style.display = 'none';
