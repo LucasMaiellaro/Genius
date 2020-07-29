@@ -156,7 +156,29 @@ body{
     background-color: black;
 }
 
-/* ======== RESPONSIVO ======== */
+/* ======== RESPONSIVO PERDEU ======== */
+
+@media(max-width:560px){
+    .perdeu{
+        font-size: 50px;
+    }
+}
+
+@media (max-width:415px){
+    .perdeu{
+        font-size: 30px;
+    }
+
+    .pontuacao{
+        font-size: 15px;
+    }
+
+    .numero-pont{
+        font-size: 15px;
+    }
+}
+
+/* ======== REPONSIVO GERAL ======== */
 
 @media(max-width:450px){
     .verde{
@@ -201,3 +223,4 @@ body{
         width: 100px;
     } 
 }
+
