@@ -27,6 +27,10 @@ function fazSequencia(){
     document.querySelector('.instrucao').style.display = 'initial';
     document.querySelector('.instrucao').innerHTML = 'aguarde';
     document.querySelector('.instrucao').style.color = 'red';
+    verde.disabled = true;
+    vermelho.disabled = true;
+    amarelo.disabled = true;
+    azul.disabled = true;
     var botao = Math.floor(Math.random() * 4);
     sequencia[i] = botao;
     setTimeout(function (){
@@ -41,6 +45,10 @@ function fazSequencia(){
     setTimeout(function(){
         document.querySelector('.instrucao').innerHTML = 'reproduza';
         document.querySelector('.instrucao').style.color = 'green';
+        verde.disabled = false;
+        vermelho.disabled = false;
+        amarelo.disabled = false;
+        azul.disabled = false;
     }, 2000 + auxiliarContador);
     console.log(sequencia);
 }
