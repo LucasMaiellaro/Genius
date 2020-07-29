@@ -155,3 +155,49 @@ body{
 .botao:hover{
     background-color: black;
 }
+
+/* ======== RESPONSIVO ======== */
+
+@media(max-width:450px){
+    .verde{
+        height: 150px;
+        width: 150px;
+    }
+
+    .vermelho{
+        height: 150px;
+        width: 150px;
+    }
+
+    .amarelo{
+        height: 150px;
+        width: 150px;
+    }
+
+    .azul{
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media(max-width:300px){
+    .verde{
+        height: 100px;
+        width: 100px;
+    }
+
+    .vermelho{
+        height: 100px;
+        width: 100px;
+    }
+
+    .amarelo{
+        height: 100px;
+        width: 100px;
+    }
+
+    .azul{
+        height: 100px;
+        width: 100px;
+    } 
+}
