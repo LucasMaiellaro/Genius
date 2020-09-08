@@ -175,4 +175,4 @@ function perdeu(){
 
 console.log('Olá curioso :)');
 console.log('Aqui você consegue roubar e alcançar pontuações incríveis');
-console.log('Quase toda a sequencia será mostrada aqui embaixo');
+console.log('Toda a sequencia será mostrada aqui embaixo');
