@@ -1,5 +1,3 @@
-// ==================== VARIAVEIS
-
 verde = document.getElementById('verde');
 vermelho = document.getElementById('vermelho');
 amarelo = document.getElementById('amarelo');
@@ -9,8 +7,6 @@ sequencia = [];
 sequenciaJogador = [];
 contador = 0;
 auxiliarContador = -1000;
-
-// ==================== MAIN CODE
 
 document.querySelector('.instrucao').style.display = 'none';
 document.querySelector('.perdeu').style.display = 'none';
@@ -53,7 +49,6 @@ function fazSequencia(){
     console.log(sequencia);
 }
 
-//FUNCTION TA FUNCIONANDO 
 function reproduzSequencia(sequencia){
     var botaoAceso;
     for (cont = 0; cont <= sequencia.length; cont++){
@@ -83,7 +78,7 @@ function reproduzSequencia(sequencia){
     }
 }
 
-// =============================================== FUNÇÕES DOS BOTÕES
+// BOTÕES
 
 function apertaVerde(){
     verde.style.backgroundColor = 'rgb(81, 255, 0)';
@@ -152,8 +147,6 @@ function apertaAzul(){
         }   
     }
 }
-
-// ================================= FUNCTION PERDEU
 
 function perdeu(){
     document.querySelector('.instrucao').style.display = 'none';
