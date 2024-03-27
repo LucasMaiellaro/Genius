@@ -164,7 +164,7 @@ function perdeu(){
     }, 0500)
 }
 
-// ================================= EASTER EGG
+// EASTER EGG
 
 console.log('Olá curioso :)');
 console.log('Aqui você consegue roubar e alcançar pontuações incríveis');
